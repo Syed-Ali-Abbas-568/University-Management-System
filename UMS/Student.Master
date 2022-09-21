@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="UMS.Student" %>
+
+<!DOCTYPE html>  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+    <title>University Management System</title>  
+    
+    
+    <link href="my.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+
+</head>  
+
+<body>  
+<header id="header">  
+<h1>University Managment System </h1>
+    
+    <h3>Student Accounts</h3>
+</header>  
+  
+
+        <form id="Form1" runat="server">
+<nav id="nav">  
+    <ul>  
+        <li><a href="StudentHome.aspx">Home</a></li>  
+        <li><a href="StudentCourse.aspx">Course Registration</a></li>  
+        <li><a href="StudentFee.aspx">Fee-Challan</a></li> 
+        <li><a href="StudentAttendance.aspx">Attendance</a></li>  
+        <li><a href="StudentTranscript.aspx">Transcript</a></li>
+
+
+
+
+
+    </ul>  
+</nav>  
+  
+
+        <div id="con">  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+     
+                
+     
+            </asp:ContentPlaceHolder>  
+         </div> 
+   
+  
+<footer id="footer">  
+    
+ 
+       
+       
+            <div class="left">        
+        <asp:Button ID="LogOut" CssClass="button button3" runat="server" Text="Logout" style="margin-left: 36px"  OnClick="LogOut_Click"/>
+      </div>
+        
+    UMS.com ©2022 All rights reserved  <br/>
+   
+    Built by:
+    <br />
+    Syed Ali Abbas
+    <br /> 
+    Muhummad Khushnood Saeed
+    <br />
+    Abdul Rehman Nadeem
+    <br />
+    Malik Umar
+</footer>
+</form>
+
+</body>  
+</html> 

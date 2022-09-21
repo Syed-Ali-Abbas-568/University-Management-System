@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Teacher.master.cs" Inherits="UMS.Teacher" %>
+
+<%--MASTER PAGE OF TEACHER--%>
+<!DOCTYPE html>  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+    <title>University Management System</title>  
+    
+    
+    <link href="my.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+    <link href="PrettyLabel.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            font-size: x-large;
+        }
+    </style>
+</head>  
+
+<body>  
+<header id="header">  
+<h1 class="auto-style1">University Managment System </h1>
+    
+    <h3>Teacher Account</h3>
+</header>  
+<nav id="nav">  
+    <ul>  
+        <li><a href="TeacherHome.aspx">Home</a></li>  
+        <li><a href="TeacherCourse.aspx">View Attendance</a></li>  
+       <li><a href="TeacherInsertAttendance.aspx">Add Attendance</a></li> 
+     <%--   <li><a href="TeacherAttendance.aspx">Teacher Attendance</a></li>  --%>
+        <li><a href="TeacherTranscript">Transcript</a></li>  
+        <li><a href="TeacherSearchStudent.aspx">Search Student</a></li>  
+
+    </ul>  
+</nav>  
+  
+
+        <form id="Form1" runat="server">
+        <div id="con">  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+            </asp:ContentPlaceHolder>  
+        </div>  
+   
+   
+  
+<footer id="footer">  
+       <div class="left">        
+        <asp:Button ID="LogOut" CssClass="button button3" runat="server" Text="Logout" style="margin-left: 36px"  OnClick="LogOut_Click"/>
+      </div>
+             </form>
+    UMS.com ©2022 All rights reserved  <br/>
+    
+    Built by:
+    <br />
+    Syed Ali Abbas
+    <br /> 
+    Muhummad Khushnood Saeed
+    <br />
+    Abdul Rehman Nadeem
+    <br />
+    Malik Umar
+</footer>  
+</body>  
+</html> 

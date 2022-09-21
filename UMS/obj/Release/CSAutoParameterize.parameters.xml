@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SqlCon1-Web.config Connection String" description="SqlCon1 Connection String used in web.config by the application to access the database." defaultValue="Data Source=LAPTOP-R5L9OOGG;Initial Catalog=UMS;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\syeda\\Documents\\4th\ Semester\\Database\ Lab\\UMS\\UMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SqlCon1']/@connectionString" />
+  </parameter>
+</parameters>

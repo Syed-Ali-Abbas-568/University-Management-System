@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Director.master.cs" Inherits="UMS.Director" %>
+
+
+<%--MASTER PAGE OF DIRECTOR--%>
+<!DOCTYPE html>  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+    <title>University Management System</title>  
+    
+    
+    <link href="my.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+
+</head>  
+
+<body>  
+<header id="header">  
+<h1>University Managment System </h1>
+    
+    <h3>Director Account</h3>
+</header>  
+<nav id="nav">  
+    <ul>  
+        <li><a href="DirectorHome.aspx">Home</a></li>  
+        <li><a href="DirectorStudent.aspx">Student Info</a></li>  
+        <li><a href="DirectorTeacher.aspx">Teacher Info</a></li>  
+        <li><a href="DirectorDepartment.aspx">Department Info</a></li>  
+        <li><a href="DirectorCourses.aspx">Courses Info</a></li>  
+     <%--   <li><a href="DirectorAttendance.aspx">Teacher Attendance</a></li>  --%>
+    </ul>  
+</nav>  
+  
+
+        <form id="Form1" runat="server">
+        <div id="con">  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+            </asp:ContentPlaceHolder>  
+        </div>  
+        
+   
+  
+<footer id="footer">  
+            <div class="left">        
+        <asp:Button ID="LogOut" CssClass="button button3" runat="server" Text="Logout" style="margin-left: 36px"  OnClick="LogOut_Click"/>
+      </div>
+    </form>
+        
+    UMS.com ©2022 All rights reserved  <br/>
+    
+    Built by:
+    <br />
+    Syed Ali Abbas
+    <br /> 
+    Muhummad Khushnood Saeed
+    <br />
+    Abdul Rehman Nadeem
+    <br />
+    Malik Umar
+</footer>  
+</body>  
+</html> 
+
